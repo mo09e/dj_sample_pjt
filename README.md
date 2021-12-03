@@ -28,3 +28,7 @@ $ python manage.py migrate
 ```
 $ python manage.py runserver
 ```
+5. サーバーを起動させた状態で以下のURLをコピーし、アドレスバーに貼り付けてください。
+```
+http://localhost:8000/blog/post_list
+```
