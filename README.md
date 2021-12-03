@@ -15,8 +15,7 @@ $ cd dj_sample_pjt
 ```
 2. シークレットキーを準備します。
 ```
-$ cd test_project
-$ touch local_settings.py
+$ touch test_project/local_settings.py
 $ python get_random_secret_key.py
 SECRET_KEY = 'SECRET_KEYが生成されます'
 ```
