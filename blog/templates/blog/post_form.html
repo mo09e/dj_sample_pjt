@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<p>{{ post.title }}</p>
+
+<form action="" method="POST">
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <td>{{ form.title }}</td>
+        </tr>
+        <tr>
+            <th>Content</th>
+            <td>{{ form.content }}</td>
+        </tr>
+    </table>
+    <button type="submit" class="submit_btn">CreatePost</button>
+    {% csrf_token %}
+</form>
+{% endblock %}

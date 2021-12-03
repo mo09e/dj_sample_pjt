@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th><p class="topics">Date</p></th>
+            <th><p class="topics">Title</p></th>
+            <th colspan="3"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in post_list %}
+        <tr>
+            <td>{{ post.date |date:"Y年m月d日" }}</td>
+            <td><a href="{% url 'blog:post_detail' post.pk %}" class="title_link">{{ post.title }}</a></td>
+            <td>
+                <a href="{% url 'blog:post_detail' post.pk %}">Detail</a>
+            </td>
+            <td>
+                <a href="{% url 'blog:post_update' post.pk %}">Edit</a>
+            </td>
+            <td>
+                <a href="{% url 'blog:post_delete' post.pk %}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

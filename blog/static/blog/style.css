@@ -1,0 +1,62 @@
+body {
+     font-family: YuGothic, Verdana;
+     background-color: #ffffff;
+}
+
+a {
+     padding: 0 10px;
+     text-decoration: none;
+     color: #808080;
+}
+a:hover {
+     text-decoration: underline;
+}
+
+th {
+     text-align: left;
+     vertical-align: middle;
+     padding-right: 20px;
+}
+
+.title_link{
+     font-weight: bold;
+     color: #000000;
+}
+
+.submit_btn {
+     padding: 1rem;
+     background: #40a0ae;
+     border: none;
+     border-radius: 0;
+     outline: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     font-size: 1rem;
+     text-align: center;
+     color: #fff;
+     cursor: pointer;
+     width: 25rem;
+}
+.submit_btn:hover{
+     opacity: 0.6;
+}
+
+.delete_btn {
+     padding: 1rem;
+     background: #ae4040;
+     border: none;
+     border-radius: 0;
+     outline: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     font-size: 1rem;
+     text-align: center;
+     color: #fff;
+     cursor: pointer;
+     width: 25rem;
+}
+.delete_btn:hover{
+     opacity: 0.6;
+}
